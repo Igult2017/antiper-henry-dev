@@ -188,18 +188,28 @@ function ProjectCard({ project, delay, isMobile }) {
       <div style={{
         display: "flex",
         flexDirection: isMobile ? "row" : "column",
-        gap: 14, alignItems: "center",
+        gap: 10, alignItems: isMobile ? "center" : "flex-end",
         marginTop: isMobile ? 16 : 0,
       }}>
         {[
-          { href: project.github, label: "GitHub", sym: "⌥" },
-          { href: project.live, label: "Live", sym: "⊕" },
-        ].map(({ href, label, sym }) => (
-          <a key={label} href={href} aria-label={label}
-            style={{ color: "var(--slate-l)", fontSize: 20, transition: "color 0.2s, transform 0.2s", display: "inline-block", textDecoration: "none" }}
-            onMouseEnter={e => { e.currentTarget.style.color = "var(--green)"; e.currentTarget.style.transform = "translateY(-3px)"; }}
-            onMouseLeave={e => { e.currentTarget.style.color = "var(--slate-l)"; e.currentTarget.style.transform = "none"; }}
-          >{sym}</a>
+          { href: project.github, label: "View Repo", icon: "⌥" },
+          { href: project.live, label: "Live Demo", icon: "⊕" },
+        ].map(({ href, label, icon }) => (
+          <a key={label} href={href} target="_blank" rel="noreferrer"
+            style={{
+              display: "inline-flex", alignItems: "center", gap: 6,
+              padding: "8px 14px", borderRadius: 4,
+              border: "1px solid var(--green)", color: "var(--green)",
+              fontFamily: "var(--mono)", fontSize: 12, fontWeight: 600,
+              textDecoration: "none", whiteSpace: "nowrap",
+              transition: "background 0.2s, transform 0.2s",
+              background: "transparent",
+            }}
+            onMouseEnter={e => { e.currentTarget.style.background = "rgba(100,255,218,0.1)"; e.currentTarget.style.transform = "translateY(-2px)"; }}
+            onMouseLeave={e => { e.currentTarget.style.background = "transparent"; e.currentTarget.style.transform = "none"; }}
+          >
+            <span>{icon}</span>{label}
+          </a>
         ))}
       </div>
     </div>
