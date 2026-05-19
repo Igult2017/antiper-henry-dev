@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/antiper-henry-dev/static/js/main.f731e17c.js",
+    "main.js": "/antiper-henry-dev/static/js/main.b79be3d2.js",
     "index.html": "/antiper-henry-dev/index.html",
-    "main.f731e17c.js.map": "/antiper-henry-dev/static/js/main.f731e17c.js.map"
+    "main.b79be3d2.js.map": "/antiper-henry-dev/static/js/main.b79be3d2.js.map"
   },
   "entrypoints": [
-    "static/js/main.f731e17c.js"
+    "static/js/main.b79be3d2.js"
   ]
 }
