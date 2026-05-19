@@ -22,24 +22,14 @@ const SKILLS = [
 
 const PROJECTS = [
   {
-    title: "AI Fitness Platform",
-    emoji: "🏋️",
-    accent: "#64ffda",
-    description:
-      "An AI-powered fitness platform that generates personalized nutrition plans and workout routines tailored to individual goals, body metrics, and dietary preferences. Users get adaptive plans that evolve with their progress.",
-    tech: ["React", "Python", "OpenAI API", "PostgreSQL", "Node.js", "Firebase Auth"],
-    github: "#",
-    live: "#",
-  },
-  {
     title: "QuizForge — Nursing AI",
     emoji: "🩺",
     accent: "#88c0d0",
     description:
       "An AI-enabled quiz and study platform purpose-built for nursing students. Generates NCLEX-style questions, tracks knowledge gaps, and creates personalized revision paths to boost exam readiness.",
     tech: ["React", "TypeScript", "OpenAI API", "Supabase", "Tailwind CSS"],
-    github: "#",
-    live: "#",
+    github: "https://github.com/Igult2017/Quizforge-pius",
+    live: "https://www.nursebrace.com/",
   },
   {
     title: "AI Trading Journal",
@@ -48,8 +38,8 @@ const PROJECTS = [
     description:
       "An AI-powered financial markets trading journal featuring Python-driven computation and analytics to process trade data, identify performance patterns, and deliver behavioral insights that help traders sharpen their strategies and manage risk.",
     tech: ["React", "Python", "Pandas", "OpenAI API", "MongoDB", "Firebase Auth"],
-    github: "#",
-    live: "#",
+    github: "https://github.com/Igult2017/trading_app",
+    live: "https://www.fsdzones.cloud",
   },
 ];
 
